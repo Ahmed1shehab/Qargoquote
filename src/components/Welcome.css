@@ -1,0 +1,70 @@
+@font-face {
+    font-family: "Biome W01 Narrow Semi Bold";
+    src: url("https://db.onlinewebfonts.com/t/db5ab8717143bece397680945b2e919d.eot");
+    src: url("https://db.onlinewebfonts.com/t/db5ab8717143bece397680945b2e919d.eot?#iefix")format("embedded-opentype"),
+        url("https://db.onlinewebfonts.com/t/db5ab8717143bece397680945b2e919d.woff2")format("woff2"),
+        url("https://db.onlinewebfonts.com/t/db5ab8717143bece397680945b2e919d.woff")format("woff"),
+        url("https://db.onlinewebfonts.com/t/db5ab8717143bece397680945b2e919d.ttf")format("truetype"),
+        url("https://db.onlinewebfonts.com/t/db5ab8717143bece397680945b2e919d.svg#Biome W01 Narrow Semi Bold")format("svg");
+}
+
+div h1 {
+    font-family: 'Biome W01 Narrow Semi Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 112px;
+    line-height: 50px;
+    letter-spacing: 0.05em;
+    color: #000;
+    padding-top: 6.25rem;
+}
+
+.head {
+    font-family: 'Biome W01 Narrow Semi Bold';
+ 
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes flip {
+    0% {
+        transform: translateY(0) rotateY(0deg);
+    }
+
+    50% {
+        transform: translateY(-20px) rotateY(180deg);
+    }
+
+    100% {
+        transform: translateY(0) rotateY(360deg);
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+}
+
+.fade-in-delay {
+    opacity: 0;
+    animation: fadeIn 1s ease-out 0.5s forwards;
+}
+
+.flip {
+    animation: flip 0.8s ease-in-out forwards;
+}
+
+.fade-in-span {
+    opacity: 0;
+    animation: fadeIn 1s ease-out 1.5s forwards;
+}

@@ -1,0 +1,69 @@
+.backImage {
+    background-image: url('../assets/Fblock/homeBanner.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 50vh;
+}
+
+.animated-text {
+    font-size: 2.5em;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+   
+    font-weight: 600;
+}
+
+.line {
+    display: inline-block;
+    overflow: hidden;
+    border-right: 2px solid transparent;
+    white-space: nowrap;
+    width: 0;
+    animation: typing 2s steps(30, end) forwards, erasing 2s steps(30, end) forwards;
+    animation-fill-mode: forwards;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes erasing {
+    from {
+        width: 100%;
+    }
+    to {
+        width: 0;
+    }
+}
+
+/* Set the sequence with delays between typing and erasing */
+.line:nth-child(1) {
+    animation: typing 2s steps(30, end) 0s forwards, erasing 2s steps(30, end) 5s forwards;
+}
+.line:nth-child(2) {
+    animation: typing 2s steps(30, end) 7s forwards, erasing 2s steps(30, end) 12s forwards;
+}
+.line:nth-child(3) {
+    animation: typing 2s steps(30, end) 14s forwards, erasing 2s steps(30, end) 19s forwards;
+}
+.line:nth-child(4) {
+    animation: typing 2s steps(30, end) 21s forwards, erasing 2s steps(30, end) 26s forwards;
+}
+
+/* Infinite loop */
+.animated-text {
+    animation: infiniteLoop 28s linear infinite;
+}
+
+@keyframes infiniteLoop {
+    0% { visibility: visible; }
+    100% { visibility: visible; }
+}
