@@ -1,10 +1,9 @@
 import "./App.css";
-import {Header, Footer} from "./components";
+import { Header, Footer } from "./components";
 import { MainPage } from "./pages/MainPage";
 function App() {
   return (
-    <div className="" >
- 
+    <div className="">
       <Header />
       <MainPage />
       <Footer />

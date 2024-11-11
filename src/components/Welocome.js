@@ -9,11 +9,15 @@ export const Welcome = () => {
       <h1 className="fade-in text-4xl sm:text-5xl md:text-6xl lg:text-9xl font-bold mb-4">
         Welcome to
       </h1>
-      
+
       {/* Logo and Qargoquote Text Section */}
       <div className="flex flex-col items-center md:flex-row md:items-center justify-center space-x-0 md:space-x-4 py-6 md:py-12 lg:py-20">
-        <img src={q} alt="Logo" className="w-24 h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 flip mb-4 md:mb-0" />
-        
+        <img
+          src={q}
+          alt="Logo"
+          className="w-24 h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 flip mb-4 md:mb-0"
+        />
+
         <h3 className="font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-gray-500 pl-0 md:pl-6 lg:pl-10 fade-in-delay">
           Qargoquote
         </h3>
@@ -28,8 +32,14 @@ export const Welcome = () => {
       <div className="flex flex-col md:flex-row items-center justify-between py-4">
         {/* Made in Qatar Section */}
         <div className="flex items-center space-x-2 mb-4 md:mb-0">
-          <img src={Qatar} alt="Qatar" className="w-6 h-6 md:w-8 md:h-8 lg:w-10 lg:h-10" />
-          <span className="text-xs sm:text-sm md:text-base lg:text-lg">Made in Qatar</span>
+          <img
+            src={Qatar}
+            alt="Qatar"
+            className="w-6 h-6 md:w-8 md:h-8 lg:w-10 lg:h-10"
+          />
+          <span className="text-xs sm:text-sm md:text-base lg:text-lg">
+            Made in Qatar
+          </span>
         </div>
 
         {/* Buttons Section */}

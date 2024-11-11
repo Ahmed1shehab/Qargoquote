@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import lol from "../assets/q.png";
 
@@ -11,25 +11,28 @@ export const Header = () => {
   useEffect(() => {
     // Smooth scrolling behavior
     const handleSmoothScroll = (e) => {
-      if (e.target.tagName === 'A' && e.target.getAttribute('href').startsWith('#')) {
+      if (
+        e.target.tagName === "A" &&
+        e.target.getAttribute("href").startsWith("#")
+      ) {
         e.preventDefault();
-        const targetId = e.target.getAttribute('href');
+        const targetId = e.target.getAttribute("href");
         const targetElement = document.querySelector(targetId);
-        
+
         if (targetElement) {
           window.scrollTo({
             top: targetElement.offsetTop,
-            behavior: 'smooth'
+            behavior: "smooth",
           });
         }
       }
     };
 
-    document.addEventListener('click', handleSmoothScroll);
+    document.addEventListener("click", handleSmoothScroll);
 
     // Cleanup event listener on component unmount
     return () => {
-      document.removeEventListener('click', handleSmoothScroll);
+      document.removeEventListener("click", handleSmoothScroll);
     };
   }, []);
 
@@ -92,7 +95,6 @@ export const Header = () => {
               <a href="#importer-trading">Importer & Trading</a>
             </li>
           </ul>
-
 
           <div className="md:flex space-x-4 justify-center items-center mt-2 md:mt-0">
             <button

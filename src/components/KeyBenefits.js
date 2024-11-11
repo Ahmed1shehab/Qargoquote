@@ -5,8 +5,6 @@ import logo1 from "../assets/KeyBenefits/logo1.png";
 import logo2 from "../assets/KeyBenefits/logo2.png";
 import logo3 from "../assets/KeyBenefits/logo3.png";
 
-
-
 export const KeyBenefits = () => {
   useEffect(() => {
     AOS.init({
@@ -19,7 +17,6 @@ export const KeyBenefits = () => {
   return (
     <section id="key-benefits" className="bg-rose-900 relative p-6">
       <div className="max-w-[1280px] mx-auto font-sans text-slate-300 flex flex-col md:flex-row">
-        
         {/* Left Column with Images, hidden on smaller screens */}
         <div className="w-full md:w-1/3 flex flex-col items-center md:block hidden">
           <img
@@ -54,7 +51,9 @@ export const KeyBenefits = () => {
 
         {/* Right Column with Text Content */}
         <div className="w-full md:w-2/3 p-6" data-aos="fade-up">
-          <h1 className="text-4xl font-bold mb-6 text-white text-center md:text-left">Key Benefits</h1>
+          <h1 className="text-4xl font-bold mb-6 text-white text-center md:text-left">
+            Key Benefits
+          </h1>
 
           <section className="mb-6">
             <h2 className="text-xl font-bold text-slate-200 mb-2">

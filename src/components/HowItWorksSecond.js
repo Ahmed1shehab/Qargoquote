@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import AOS styles
 import mainImage from "../assets/HowItWorks/main2.png";
@@ -45,31 +45,44 @@ export const HowItWorksSecond = () => {
           For Importers and Traders
         </span>
 
-        <h2 className="text-lg sm:text-xl font-semibold mt-6 mb-6 text-center md:text-left" data-aos="fade-up">
+        <h2
+          className="text-lg sm:text-xl font-semibold mt-6 mb-6 text-center md:text-left"
+          data-aos="fade-up"
+        >
           HERE’S A STEP-BY-STEP PROCESS FOR USING QARGOQUOTE
         </h2>
 
-        <div className="space-y-4 text-sm sm:text-base md:text-lg text-center md:text-left" data-aos="fade-up">
+        <div
+          className="space-y-4 text-sm sm:text-base md:text-lg text-center md:text-left"
+          data-aos="fade-up"
+        >
           <p>
-            <strong>Sign-Up:</strong> Users create an account, entering business details and completing verification.
+            <strong>Sign-Up:</strong> Users create an account, entering business
+            details and completing verification.
           </p>
           <p>
             <strong>Log-In:</strong> Users log in securely for platform access.
           </p>
           <p>
-            <strong>Choose Subscription Plan:</strong> Select from weekly, monthly, or annual subscription options. Complete payment to unlock full platform features.
+            <strong>Choose Subscription Plan:</strong> Select from weekly,
+            monthly, or annual subscription options. Complete payment to unlock
+            full platform features.
           </p>
           <p>
-            <strong>Create a Shipment Request:</strong> Importers enter shipment specifics, submitting a request for quotes.
+            <strong>Create a Shipment Request:</strong> Importers enter shipment
+            specifics, submitting a request for quotes.
           </p>
           <p>
-            <strong>Receive and Compare Quotes:</strong> Importers review quotes, comparing costs and quality based on provider ratings.
+            <strong>Receive and Compare Quotes:</strong> Importers review
+            quotes, comparing costs and quality based on provider ratings.
           </p>
           <p>
-            <strong>Select a Service Provider:</strong> Finalize the booking with the chosen provider.
+            <strong>Select a Service Provider:</strong> Finalize the booking
+            with the chosen provider.
           </p>
           <p>
-            <strong>Completion and Review:</strong> After successful delivery, importers can rate the service.
+            <strong>Completion and Review:</strong> After successful delivery,
+            importers can rate the service.
           </p>
         </div>
       </div>

@@ -12,7 +12,6 @@ import {
   LogisticsIntro,
   Ending,
   KeyBenefitsS,
-  
 } from "../components";
 export const MainPage = () => {
   return (

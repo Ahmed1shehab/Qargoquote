@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import AOS styles
 import mainImage from "../assets/HowItWorks/main.png";
@@ -14,7 +14,10 @@ export const HowItWorks = () => {
   }, []);
 
   return (
-    <section id="service-provider" className="max-w-[1280px] mx-auto p-6 font-sans text-gray-800 flex flex-col md:flex-row">
+    <section
+      id="service-provider"
+      className="max-w-[1280px] mx-auto p-6 font-sans text-gray-800 flex flex-col md:flex-row"
+    >
       {/* Left Column with Main Image */}
       <div
         className="md:w-1/3 w-full mb-6 md:mb-0 flex justify-center md:justify-start"
@@ -34,7 +37,10 @@ export const HowItWorks = () => {
           <img src={iconImage} alt="Icon" className="w-12 h-12 ml-4" />
         </div>
 
-        <span className="block text-slate-400 text-lg ml-[75px]" data-aos="fade-up">
+        <span
+          className="block text-slate-400 text-lg ml-[75px]"
+          data-aos="fade-up"
+        >
           For Service Provider
         </span>
 

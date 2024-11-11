@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import like from "../assets/like.png";
@@ -22,23 +22,19 @@ export const Other = () => {
   }, []);
 
   return (
-    <section  className="relative max-w-[1280px] mx-auto p-6 font-sans text-gray-800">
+    <section className="relative max-w-[1280px] mx-auto p-6 font-sans text-gray-800">
       {/* Main Container for Image and Content */}
       <div className="flex flex-col md:flex-row items-center md:items-start text-center md:text-left relative">
-        
         {/* Text Content */}
-        <div
-          className="relative z-20 mt-8 md:mt-0 md:w-2/3"
-          data-aos="fade-up"
-        >
+        <div className="relative z-20 mt-8 md:mt-0 md:w-2/3" data-aos="fade-up">
           <p className="text-lg text-gray-500 mb-4">
             Imagine having a steady stream of targeted leads delivered right to
             you—clients actively searching for logistics solutions, ready to
             receive your quote.
           </p>
           <h2 className="text-2xl font-bold text-gray-800 mb-4 max-w-[800px] mx-auto">
-            With <span className="font-normal">Qargoquote</span>, you can access a
-            marketplace of serious inquiries, all looking for reliable service
+            With <span className="font-normal">Qargoquote</span>, you can access
+            a marketplace of serious inquiries, all looking for reliable service
             providers like you
           </h2>
 
