@@ -8,6 +8,12 @@
         url("https://db.onlinewebfonts.com/t/db5ab8717143bece397680945b2e919d.svg#Biome W01 Narrow Semi Bold")format("svg");
 }
 
+@font-face {
+    font-family: 'Avenir';
+    src: url('../assets/Fonts/Avenir\ Next\ LT\ Pro\ Demi.otf') format('truetype');
+}
+
+
 div h1 {
     font-family: 'Biome W01 Narrow Semi Bold';
     font-style: normal;
@@ -21,7 +27,10 @@ div h1 {
 
 .head {
     font-family: 'Biome W01 Narrow Semi Bold';
+}
 
+.head2 {
+    font-family: 'Avenir';
 }
 
 
@@ -68,4 +77,20 @@ div h1 {
 .fade-in-span {
     opacity: 0;
     animation: fadeIn 1s ease-out 1.5s forwards;
+}
+
+.line-through-red {
+    position: relative;
+    display: inline-block;
+}
+
+.line-through-red::after {
+    content: "";
+    position: absolute;
+    top: 70%;
+    left: 0;
+    right: 0;
+    height: 6px;
+    background-color: red;
+    transform: translateY(-50%);
 }

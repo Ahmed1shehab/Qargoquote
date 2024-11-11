@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import logo from "../assets/q.png"; // Import your logo image
+import logo from "../assets/q.png";
 
 export const Story = () => {
   useEffect(() => {

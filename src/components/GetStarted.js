@@ -49,7 +49,7 @@ export const GetStarted = () => {
             With suitable weekly, monthly, and annual plans
           </p>
           <a href="/" className="text-white underline text-lg">
-            Learn More
+            Register
           </a>
         </div>
       </div>
@@ -60,10 +60,11 @@ export const GetStarted = () => {
         data-aos="fade-in"
       >
         <div className="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-4">
-          <span className="text-4xl sm:text-5xl font-semibold text-gray-500 line-through">
+          <span className="text-4xl sm:text-5xl font-semibold text-white line-through-red">
             Today
           </span>
-          <span className="text-4xl sm:text-5xl font-semibold text-green-500">
+
+          <span className="text-4xl sm:text-5xl font-semibold text-white">
             Now!
           </span>
         </div>

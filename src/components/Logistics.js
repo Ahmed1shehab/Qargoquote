@@ -17,11 +17,18 @@ export const Logistics = () => {
   return (
     <section id="Service" className="bg-rose-900 overflow-hidden">
       <div className="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-8 py-6">
-        <h1 className="text-2xl md:text-3xl text-center font-bold text-white leading-none pt-2 mb-4 head">
+        <h1
+          className="text-2xl md:text-3xl text-center font-bold text-white leading-none pt-2 mb-4 head"
+          data-aos="fade-up"
+        >
           Logistics Business Owner
         </h1>
 
-        <div className="space-y-2 text-white text-base md:text-lg mb-6 px-2">
+        <div
+          className="space-y-2 text-white text-base md:text-lg mb-6 px-2"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
           <p>
             Missing out on potential clients due to{" "}
             <strong>limited market reach?</strong>
@@ -46,7 +53,11 @@ export const Logistics = () => {
         </div>
 
         <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
-          <div className="w-full md:w-1/2 h-80" data-aos="fade-right">
+          <div
+            className="w-full md:w-1/2 h-80"
+            data-aos="fade-right"
+            data-aos-delay="400"
+          >
             <img
               src={pic1}
               alt="Logistics Business Owner 1"
@@ -56,6 +67,7 @@ export const Logistics = () => {
           <div
             className="w-full md:w-1/2 h-80 mt-4 md:mt-0"
             data-aos="fade-left"
+            data-aos-delay="400"
           >
             <img
               src={pic2}

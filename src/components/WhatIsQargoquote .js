@@ -59,7 +59,7 @@ export const WhatIsQargoquote = () => {
           <h2
             ref={titleRef}
             data-section="title"
-            className={`text-3xl font-bold pl-4 text-white text-center md:text-left transition-opacity duration-700 ${
+            className={`text-3xl font-bold pl-4 text-white text-center md:text-left transition-opacity duration-700 head2 ${
               visibleSections.title ? "opacity-100" : "opacity-0"
             }`}
           >

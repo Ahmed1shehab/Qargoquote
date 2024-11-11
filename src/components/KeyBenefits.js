@@ -15,14 +15,14 @@ export const KeyBenefits = () => {
   }, []);
 
   return (
-    <section id="key-benefits" className="bg-rose-900 relative p-6">
+    <section id="key-benefits" className="bg-rose-900 relative">
       <div className="max-w-[1280px] mx-auto font-sans text-slate-300 flex flex-col md:flex-row">
         {/* Left Column with Images, hidden on smaller screens */}
-        <div className="w-full md:w-1/3 flex flex-col items-center md:block hidden">
+        <div className="w-full md:w-1/3 flex flex-col items-center md:block hidden space-y-2 md:space-y-3">
           <img
             src={logo1}
             alt="logo 1"
-            className="w-3/4 mb-4 rotate-6"
+            className="w-4/5 md:w-full rotate-6" // Largest logo
             data-aos="fade-right"
             data-aos-delay="100"
             data-aos-duration="1000"
@@ -31,7 +31,7 @@ export const KeyBenefits = () => {
           <img
             src={logo2}
             alt="logo 2"
-            className="w-3/4 mb-4 rotate-6"
+            className="w-3/4 md:w-3/4 rotate-6" // Slightly smaller
             data-aos="fade-right"
             data-aos-delay="300"
             data-aos-duration="1000"
@@ -39,7 +39,7 @@ export const KeyBenefits = () => {
           <img
             src={logo3}
             alt="logo 3"
-            className="w-3/4 rotate-6"
+            className="w-1/2 md:w-1/2 rotate-6" // Smallest logo
             data-aos="fade-right"
             data-aos-delay="500"
             data-aos-duration="1000"
@@ -59,15 +59,19 @@ export const KeyBenefits = () => {
             <p className="text-white">
               <strong>Expand Market Presence:</strong> Service providers gain
               visibility to all inquiries from importers actively looking for
-              logistics solutions, eliminating the need for time-consuming outreach.
+              logistics solutions, eliminating the need for time-consuming
+              outreach.
             </p>
             <p className="text-white">
               <strong>Direct Targeting:</strong> With importers and traders
               posting specific shipment requests, providers can respond to
-              relevant inquiries, increasing their chances of securing contracts.
+              relevant inquiries, increasing their chances of securing
+              contracts.
             </p>
             <p className="text-white">
-              <strong>Opportunities for Growth:</strong> By attracting inquiries of all sizes, providers can stabilize revenue streams and foster growth.
+              <strong>Opportunities for Growth:</strong> By attracting inquiries
+              of all sizes, providers can stabilize revenue streams and foster
+              growth.
             </p>
           </section>
 
@@ -77,15 +81,18 @@ export const KeyBenefits = () => {
             </h2>
             <p className="text-white">
               <strong>Reduced Sales Overhead:</strong> Qargoquote’s automated
-              inquiry and quoting system reduces reliance on a large sales team, saving on costs.
+              inquiry and quoting system reduces reliance on a large sales team,
+              saving on costs.
             </p>
             <p className="text-white">
               <strong>Streamlined Quoting Process:</strong> Automated
-              notifications for relevant requests allow providers to respond quickly.
+              notifications for relevant requests allow providers to respond
+              quickly.
             </p>
             <p className="text-white">
               <strong>Lower Marketing Expenses:</strong> The platform serves as
-              a digital marketplace, reducing the need for expensive marketing by providing a steady client flow.
+              a digital marketplace, reducing the need for expensive marketing
+              by providing a steady client flow.
             </p>
           </section>
 
@@ -102,7 +109,8 @@ export const KeyBenefits = () => {
               that providers are notified immediately of new opportunities.
             </p>
             <p className="text-white">
-              <strong>Increased Winning Potential:</strong> Rapid quote submissions increase providers’ chances of securing jobs.
+              <strong>Increased Winning Potential:</strong> Rapid quote
+              submissions increase providers’ chances of securing jobs.
             </p>
           </section>
         </div>

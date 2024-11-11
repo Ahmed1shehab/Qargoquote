@@ -15,9 +15,12 @@ export const KeyBenefitsS = () => {
   return (
     <div className="bg-white overflow-hidden relative px-4 sm:px-6 md:px-8">
       <div className="max-w-[1280px] mx-auto font-sans text-black flex flex-col md:flex-row relative items-center md:items-start">
-        
         {/* Top-left Logo */}
-        <img src={Logo} alt="Logo" className="top-left-logo w-64 md:w-64  absolute top-4 left-4" />
+        <img
+          src={Logo}
+          alt="Logo"
+          className="top-left-logo w-64 md:w-64  absolute top-4 left-4"
+        />
 
         <div className="w-full md:w-2/3 p-4 md:p-6" data-aos="fade-up">
           <div className="mb-6 text-center md:text-left">
@@ -49,7 +52,9 @@ export const KeyBenefitsS = () => {
               eliminating the need to search and contact them individually.
             </p>
             <p className="text-black text-lg md:text-xl pb-2 md:pb-[15px] px-2 md:px-0">
-              <strong className="text-slate-700 font-bold">Cost Savings:</strong>{" "}
+              <strong className="text-slate-700 font-bold">
+                Cost Savings:
+              </strong>{" "}
               You will be able to compare multiple offers and select the most
               efficient option according to your priority, considering effective
               shipping options by shipping cost, transit time, payment method,
@@ -69,23 +74,27 @@ export const KeyBenefitsS = () => {
           <img
             src={logo1}
             alt="logo 1"
-            className="w-28 h-28 sm:w-36 sm:h-36 md:w-48 md:h-48 mb-4"
+            className="w-4/5 md:w-full rotate-6" // Largest logo
             data-aos="fade-right"
             data-aos-delay="100"
+            data-aos-duration="1000"
+            data-aos-anchor-placement="top-bottom"
           />
           <img
             src={logo2}
             alt="logo 2"
-            className="w-28 h-28 sm:w-36 sm:h-36 md:w-48 md:h-48 mb-4"
+            className="w-3/4 md:w-3/4 rotate-6" // Slightly smaller
             data-aos="fade-right"
             data-aos-delay="300"
+            data-aos-duration="1000"
           />
           <img
             src={logo3}
             alt="logo 3"
-            className="w-28 h-28 sm:w-36 sm:h-36 md:w-48 md:h-48"
+            className="w-1/2 md:w-1/2 rotate-6" // Smallest logo
             data-aos="fade-right"
             data-aos-delay="500"
+            data-aos-duration="1000"
           />
         </div>
       </div>

@@ -89,7 +89,11 @@ export const LogisticsIntro = () => {
         </div>
 
         <div className="logo-container" data-aos="fade-in">
-          <img src={Logo} alt="Logo" className="logo w-64  sm:w-64  md:w-64  mx-auto" />
+          <img
+            src={Logo}
+            alt="Logo"
+            className="logo w-64  sm:w-64  md:w-64  mx-auto"
+          />
         </div>
       </div>
     </div>

@@ -3,6 +3,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import like from "../assets/like.png";
 import like2 from "../assets/like2.jpg";
+import logo from "../assets/q.png";
 
 export const Other = () => {
   const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth >= 1024);
@@ -23,6 +24,9 @@ export const Other = () => {
 
   return (
     <section className="relative max-w-[1280px] mx-auto p-8 md:p-12 font-sans text-gray-800">
+      <div className="flex justify-center pt-4" data-aos="fade-down">
+        <img src={logo} alt="Logo" className="w-64" />
+      </div>
       {/* Main Container for Image and Content */}
       <div className="flex flex-col md:flex-row items-center md:items-start text-center md:text-left relative">
         {/* Text Content */}
@@ -52,19 +56,21 @@ export const Other = () => {
         {/* Image Container (only visible on large screens) */}
         {isLargeScreen && (
           <div
-            className="absolute bottom-0 right-0 w-40 h-40 md:w-64 md:h-64 opacity-70"
+            className="absolute bottom-0 right-0 w-40 h-40 md:w-64 md:h-64 opacity-70 flex justify-center items-center"
             data-aos="fade-left"
           >
-            <img
-              src={like2}
-              alt="Background Logo"
-              className="absolute bottom-0 right-0 w-full h-full z-0"
-            />
-            <img
-              src={like}
-              alt="Logo"
-              className="absolute bottom-0 right-0 w-full h-full z-10"
-            />
+            <div className="relative w-full h-full">
+              <img
+                src={like2}
+                alt="Background Logo"
+                className="absolute inset-0 w-full h-full z-0"
+              />
+              <img
+                src={like}
+                alt="Logo"
+                className="absolute inset-0 w-full h-full z-10"
+              />
+            </div>
           </div>
         )}
       </div>

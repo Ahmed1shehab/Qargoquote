@@ -40,12 +40,7 @@ export const Header = () => {
             <li className="after:content-['|'] after:ml-4 last:after:content-[''] hover:cursor-pointer">
               <a href="#Qargoquote">What is Qargoquote</a>
             </li>
-            <li className="after:content-['|'] after:ml-4 last:after:content-[''] hover:cursor-pointer">
-              <a href="/">Sign Up</a>
-            </li>
-            <li className="after:content-['|'] after:ml-4 last:after:content-[''] hover:cursor-pointer">
-              <a href="/">Sign In</a>
-            </li>
+          
             <li
               className="relative hover:cursor-pointer"
               onMouseEnter={() => setIsDropdownOpen(true)}
@@ -54,7 +49,7 @@ export const Header = () => {
               <a
                 href="#Subscribe"
                 onClick={(e) => e.preventDefault()}
-                className="flex items-center"
+                className="flex items-center after:content-['|'] after:ml-4 last:after:content-['']"
               >
                 Solutions
                 <FaChevronDown className="ml-1" />
@@ -82,8 +77,17 @@ export const Header = () => {
                       Importers and traders
                     </a>
                   </li>
+                  
                 </ul>
               </div>
+
+              
+            </li>
+            <li className="after:content-['|'] after:ml-4 last:after:content-[''] hover:cursor-pointer">
+              <a href="/">Register</a>
+            </li>
+            <li className="after:content-['|'] after:ml-4 last:after:content-[''] hover:cursor-pointer">
+              <a href="/">Login</a>
             </li>
           </ul>
         </div>

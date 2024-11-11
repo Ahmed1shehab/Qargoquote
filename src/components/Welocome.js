@@ -16,7 +16,7 @@ export const Welcome = () => {
           alt="Logo"
           className="w-24 h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 flip mb-4 md:mb-0"
         />
-        <h3 className="font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-gray-500 pl-0 md:pl-6 lg:pl-10 fade-in-delay">
+        <h3 className="font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-gray-500 pl-0 md:pl-6 lg:pl-10 fade-in-delay head2">
           Qargoquote
         </h3>
       </div>
@@ -38,22 +38,6 @@ export const Welcome = () => {
           <span className="text-xs sm:text-sm md:text-base lg:text-lg">
             Made in Qatar
           </span>
-        </div>
-
-        {/* Buttons Section */}
-        <div className="flex flex-col space-y-2 items-center md:items-end">
-          <button
-            type="button"
-            className="py-2.5 px-5 text-sm md:text-base font-medium text-gray-900 focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
-          >
-            LEARN MORE
-          </button>
-          <button
-            type="button"
-            className="py-2.5 px-5 text-sm md:text-base font-medium text-gray-900 focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
-          >
-            GET STARTED
-          </button>
         </div>
       </div>
     </section>
