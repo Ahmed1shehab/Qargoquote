@@ -8,8 +8,11 @@ export { KeyBenefits } from "./KeyBenefits.js";
 export { HowItWorks } from "./HowItWorks.js";
 export { Importer } from "./Importer.js";
 export { HowItWorksSecond } from "./HowItWorksSecond.js";
-export { LogisticsIntro } from "./LogisticsIntro.js";
+export { LogisticsIntro } from "./LogisticsAndKey/LogisticsIntro.js";
 export { Ending } from "./Ending.js";
-export { KeyBenefitsS } from "./KeyBenefitsS.js";
+export { KeyBenefitsS } from "./LogisticsAndKey/KeyBenefitsS.js";
 export { Footer } from "./Footer.js";
+export { GetStarted } from "./GetStarted.js";
+export { Form } from "./form.js";
+
 

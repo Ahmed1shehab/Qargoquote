@@ -1,9 +1,9 @@
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import pic3 from "../assets/Logistics/pic3.png";
-import Logo from "../assets/q.png";
-import "./LogisticsIntro.css";
+import pic3 from "../../assets/Logistics/pic3.png";
+import Logo from "../../assets/q.png";
+import "./LogisticsAndKey.css";
 
 export const LogisticsIntro = () => {
   useEffect(() => {

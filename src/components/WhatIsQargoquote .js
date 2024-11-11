@@ -43,7 +43,7 @@ export const WhatIsQargoquote = () => {
   }, []);
 
   return (
-    <section className="bg-rose-900 p-6 mx-auto" id="what-is-qargoquote">
+    <section className="bg-rose-900 p-6 mx-auto" id="Qargoquote">
       <div className="max-w-[1280px] mx-auto space-y-8">
         {/* Responsive Layout for Image and Title */}
         <div className="flex flex-col md:flex-row md:items-center ">

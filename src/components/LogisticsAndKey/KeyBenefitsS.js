@@ -1,11 +1,11 @@
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import logo1 from "../assets/KeyBenefits/logo1.png";
-import logo2 from "../assets/KeyBenefits/logo2.png";
-import logo3 from "../assets/KeyBenefits/logo3.png";
-import Logo from "../assets/q.png";
-import "./KeyBenefits.css";
+import logo1 from "../../assets/KeyBenefits/logo1.png";
+import logo2 from "../../assets/KeyBenefits/logo2.png";
+import logo3 from "../../assets/KeyBenefits/logo3.png";
+import Logo from "../../assets/q.png";
+import "./LogisticsAndKey.css";
 
 export const KeyBenefitsS = () => {
   useEffect(() => {

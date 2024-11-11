@@ -15,7 +15,7 @@ export const Logistics = () => {
   }, []);
 
   return (
-    <section id="logistics-business-owner" className="bg-rose-900">
+    <section id="Service" className="bg-rose-900">
       <div className="max-w-[1280px] mx-auto p-6">
         <h1 className="text-2xl md:text-3xl text-center font-bold text-white leading-none pt-2 mb-4 head">
           Logistics Business Owner

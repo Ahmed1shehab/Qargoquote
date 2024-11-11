@@ -12,6 +12,8 @@ import {
   LogisticsIntro,
   Ending,
   KeyBenefitsS,
+  Form,
+  GetStarted,
 } from "../components";
 export const MainPage = () => {
   return (
@@ -28,6 +30,8 @@ export const MainPage = () => {
       <LogisticsIntro />
       <KeyBenefitsS />
       <Ending />
+      <GetStarted />
+      <Form />
     </main>
   );
 };

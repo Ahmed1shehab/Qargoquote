@@ -15,7 +15,7 @@ export const Importer = () => {
   }, []);
 
   return (
-    <section id="importer-trading" className="bg-rose-900">
+    <section id="Importer" className="bg-rose-900">
       <div className="max-w-[1280px] mx-auto p-6">
         <h1
           className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-center font-bold text-white leading-tight pt-2 mb-4 head break-words"

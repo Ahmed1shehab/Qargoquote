@@ -1,12 +1,12 @@
-import "./Welcome.css";
+
 import q from "../assets/qq.png";
 import Qatar from "../assets/qatar.png";
 
 export const Welcome = () => {
   return (
-    <section id="Welcome" className="text-center p-4">
+    <section id="Welcome" className="text-center ">
       {/* Title Section */}
-      <h1 className="fade-in text-4xl sm:text-5xl md:text-6xl lg:text-9xl font-bold mb-4">
+      <h1 className="fade-in text-4xl sm:text-5xl md:text-6xl lg:text-9xl font-bold mb-">
         Welcome to
       </h1>
 
@@ -32,15 +32,16 @@ export const Welcome = () => {
       <div className="flex flex-col md:flex-row items-center justify-between py-4">
         {/* Made in Qatar Section */}
         <div className="flex items-center space-x-2 mb-4 md:mb-0">
-          <img
-            src={Qatar}
-            alt="Qatar"
-            className="w-6 h-6 md:w-8 md:h-8 lg:w-10 lg:h-10"
-          />
-          <span className="text-xs sm:text-sm md:text-base lg:text-lg">
-            Made in Qatar
-          </span>
-        </div>
+  <img
+    src={Qatar}
+    alt="Qatar"
+    className="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6"
+  />
+  <span className="text-xs sm:text-sm md:text-base lg:text-lg">
+    Made in Qatar
+  </span>
+</div>
+
 
         {/* Buttons Section */}
         <div className="flex flex-col space-y-2 items-center md:items-end">

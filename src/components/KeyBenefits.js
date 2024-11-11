@@ -22,30 +22,27 @@ export const KeyBenefits = () => {
           <img
             src={logo1}
             alt="logo 1"
-            className="w-3/4 mb-4"
+            className="w-3/4 mb-4 rotate-6"
             data-aos="fade-right"
             data-aos-delay="100"
             data-aos-duration="1000"
             data-aos-anchor-placement="top-bottom"
-            style={{ transform: "rotate(10deg)" }}
           />
           <img
             src={logo2}
             alt="logo 2"
-            className="w-3/4 mb-4"
+            className="w-3/4 mb-4 rotate-6"
             data-aos="fade-right"
             data-aos-delay="300"
             data-aos-duration="1000"
-            style={{ transform: "rotate(10deg)" }}
           />
           <img
             src={logo3}
             alt="logo 3"
-            className="w-3/4"
+            className="w-3/4 rotate-6"
             data-aos="fade-right"
             data-aos-delay="500"
             data-aos-duration="1000"
-            style={{ transform: "rotate(10deg)" }}
           />
         </div>
 
@@ -61,20 +58,16 @@ export const KeyBenefits = () => {
             </h2>
             <p className="text-white">
               <strong>Expand Market Presence:</strong> Service providers gain
-              visibility to all inquiries that importers actively looking for
-              logistics solutions. This direct access eliminates the need for
-              time-consuming outreach and marketing efforts.
+              visibility to all inquiries from importers actively looking for
+              logistics solutions, eliminating the need for time-consuming outreach.
             </p>
             <p className="text-white">
               <strong>Direct Targeting:</strong> With importers and traders
-              posting specific shipment requests, providers can focus on
-              responding to relevant inquiries, increasing the chance of
-              securing contracts and reducing cold sales efforts.
+              posting specific shipment requests, providers can respond to
+              relevant inquiries, increasing their chances of securing contracts.
             </p>
             <p className="text-white">
-              <strong>Opportunities for Growth:</strong> By attracting a wide
-              range of inquiries (small, medium, and large), providers can
-              stabilize revenue streams and foster long-term growth.
+              <strong>Opportunities for Growth:</strong> By attracting inquiries of all sizes, providers can stabilize revenue streams and foster growth.
             </p>
           </section>
 
@@ -84,19 +77,15 @@ export const KeyBenefits = () => {
             </h2>
             <p className="text-white">
               <strong>Reduced Sales Overhead:</strong> Qargoquote’s automated
-              inquiry and quoting system reduces reliance on a large sales team,
-              saving on salaries, training, and other sales-related costs.
+              inquiry and quoting system reduces reliance on a large sales team, saving on costs.
             </p>
             <p className="text-white">
               <strong>Streamlined Quoting Process:</strong> Automated
-              notifications for relevant shipment requests allow providers to
-              respond promptly, increasing efficiency without needing extra
-              resources.
+              notifications for relevant requests allow providers to respond quickly.
             </p>
             <p className="text-white">
               <strong>Lower Marketing Expenses:</strong> The platform serves as
-              a digital marketplace, reducing the need for expensive marketing
-              campaigns by providing a steady flow of interested clients.
+              a digital marketplace, reducing the need for expensive marketing by providing a steady client flow.
             </p>
           </section>
 
@@ -106,21 +95,14 @@ export const KeyBenefits = () => {
             </h2>
             <p className="text-white">
               <strong>Quick Quote Submission:</strong> Providers can respond to
-              shipment requests quickly through the platform, keeping them
-              competitive while reducing the administrative burden of
-              traditional quoting processes.
+              requests quickly, keeping them competitive.
             </p>
             <p className="text-white">
               <strong>Improved Responsiveness:</strong> Automated systems ensure
-              that providers are notified immediately of new opportunities,
-              helping them stay agile and responsive to clients’ needs, a key
-              factor in winning contracts.
+              that providers are notified immediately of new opportunities.
             </p>
             <p className="text-white">
-              <strong>Increased Winning Potential:</strong> By being able to
-              submit quotes rapidly, providers increase their chances of
-              securing jobs, enhancing their sales conversion rate without
-              additional costs.
+              <strong>Increased Winning Potential:</strong> Rapid quote submissions increase providers’ chances of securing jobs.
             </p>
           </section>
         </div>
