@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import logo from "../assets/q.png"; // Import your logo image
 
 export const Story = () => {
   useEffect(() => {
@@ -12,7 +13,12 @@ export const Story = () => {
   }, []);
 
   return (
-    <section id="Our-Story" className="max-w-[1280px] mx-auto p-10 space-y-12">
+    <section id="Our-Story" className="max-w-[1280px] mx-auto p-10 space-y-16 md:space-y-20">
+      {/* Centered Logo */}
+      <div className="flex justify-center mb-10" data-aos="fade-down">
+        <img src={logo} alt="Logo" className="w-64  " />
+      </div>
+
       {/* Story Section */}
       <section
         className="flex flex-col md:flex-row items-start md:space-x-6 space-y-6 md:space-y-0"

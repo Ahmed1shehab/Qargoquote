@@ -34,10 +34,10 @@ export const LogisticsIntro = () => {
   }, []);
 
   return (
-    <div className="bg-rose-900 flex items-center">
-      <div className="max-w-[1200px] mx-auto pt-6 text-center font-sans text-white relative">
+    <div className="bg-rose-900 flex items-center overflow-hidden">
+      <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-8 pt-6 text-center font-sans text-white relative">
         <p
-          className="text-xl md:text-2xl font-semibold mb-6"
+          className="text-lg sm:text-xl md:text-2xl font-semibold mb-6"
           data-aos="fade-in"
         >
           What if you could get instant access to a marketplace of logistics
@@ -47,14 +47,14 @@ export const LogisticsIntro = () => {
         </p>
 
         <h2
-          className="text-2xl md:text-3xl font-bold text-slate-200 mb-4"
+          className="text-xl sm:text-2xl md:text-3xl font-bold text-slate-200 mb-4"
           data-aos="fade-in"
         >
           Qargoquote is here to transform the way you manage logistics.
         </h2>
 
         <div
-          className="text-lg md:text-xl text-white mb-6"
+          className="text-base sm:text-lg md:text-xl text-white mb-6"
           data-aos="fade-in"
           data-aos-delay="200"
         >
@@ -71,16 +71,16 @@ export const LogisticsIntro = () => {
             <img
               src={pic3}
               alt="Logistics"
-              className="w-32 h-32 sm:w-40 sm:h-40 md:w-64 md:h-64"
+              className="w-28 h-28 sm:w-36 sm:h-36 md:w-64 md:h-64 object-cover"
             />
           </div>
 
           <div
-            className="md:w-1/2 flex flex-col items-center justify-center md:justify-start md:mt-4"
+            className="md:w-1/2 flex flex-col items-center md:items-start justify-center md:mt-4"
             data-aos="fade-left"
             data-aos-delay="600"
           >
-            <p className="text-lg md:text-xl text-slate-200 font-medium md:text-left mb-4">
+            <p className="text-base sm:text-lg md:text-xl text-slate-200 font-medium md:text-left mb-4">
               Now you can streamline the procurement process, save on costs,{" "}
               <br />
               and make informed decisions with ease.
@@ -89,7 +89,7 @@ export const LogisticsIntro = () => {
         </div>
 
         <div className="logo-container" data-aos="fade-in">
-          <img src={Logo} alt="Logistics" className="logo" />
+          <img src={Logo} alt="Logo" className="logo w-64  sm:w-64  md:w-64  mx-auto" />
         </div>
       </div>
     </div>

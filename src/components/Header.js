@@ -63,7 +63,7 @@ export const Header = () => {
                 id="dropdownNavbar"
                 className={`${
                   isDropdownOpen ? "block" : "hidden"
-                } z-10 font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 absolute top-full left-0`}
+                } z-10 font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 absolute top-full left-1/2 transform -translate-x-1/2 md:left-0 md:translate-x-0 p-4 md:p-0`}
               >
                 <ul className="py-2 text-sm text-gray-700">
                   <li>

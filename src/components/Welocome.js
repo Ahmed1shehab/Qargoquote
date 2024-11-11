@@ -1,10 +1,9 @@
-
 import q from "../assets/qq.png";
 import Qatar from "../assets/qatar.png";
 
 export const Welcome = () => {
   return (
-    <section id="Welcome" className="text-center ">
+    <section id="Welcome" className="text-center px-4 sm:px-6 md:px-0">
       {/* Title Section */}
       <h1 className="fade-in text-4xl sm:text-5xl md:text-6xl lg:text-9xl font-bold mb-">
         Welcome to
@@ -17,7 +16,6 @@ export const Welcome = () => {
           alt="Logo"
           className="w-24 h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 flip mb-4 md:mb-0"
         />
-
         <h3 className="font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-gray-500 pl-0 md:pl-6 lg:pl-10 fade-in-delay">
           Qargoquote
         </h3>
@@ -29,19 +27,18 @@ export const Welcome = () => {
       </span>
 
       {/* Footer Section with "Made in Qatar" and Buttons */}
-      <div className="flex flex-col md:flex-row items-center justify-between py-4">
+      <div className="flex flex-col md:flex-row items-center justify-between py-4 px-4 sm:px-6 md:px-0">
         {/* Made in Qatar Section */}
         <div className="flex items-center space-x-2 mb-4 md:mb-0">
-  <img
-    src={Qatar}
-    alt="Qatar"
-    className="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6"
-  />
-  <span className="text-xs sm:text-sm md:text-base lg:text-lg">
-    Made in Qatar
-  </span>
-</div>
-
+          <img
+            src={Qatar}
+            alt="Qatar"
+            className="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6"
+          />
+          <span className="text-xs sm:text-sm md:text-base lg:text-lg">
+            Made in Qatar
+          </span>
+        </div>
 
         {/* Buttons Section */}
         <div className="flex flex-col space-y-2 items-center md:items-end">

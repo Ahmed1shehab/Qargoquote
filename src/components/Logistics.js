@@ -15,13 +15,13 @@ export const Logistics = () => {
   }, []);
 
   return (
-    <section id="Service" className="bg-rose-900">
-      <div className="max-w-[1280px] mx-auto p-6">
+    <section id="Service" className="bg-rose-900 overflow-hidden">
+      <div className="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-8 py-6">
         <h1 className="text-2xl md:text-3xl text-center font-bold text-white leading-none pt-2 mb-4 head">
           Logistics Business Owner
         </h1>
 
-        <div className="space-y-2 text-white text-base md:text-lg mb-6">
+        <div className="space-y-2 text-white text-base md:text-lg mb-6 px-2">
           <p>
             Missing out on potential clients due to{" "}
             <strong>limited market reach?</strong>

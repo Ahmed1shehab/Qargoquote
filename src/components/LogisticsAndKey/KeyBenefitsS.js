@@ -13,29 +13,31 @@ export const KeyBenefitsS = () => {
   }, []);
 
   return (
-    <div className="bg-white relative">
-      <div className="max-w-[1280px] mx-auto font-sans text-black flex flex-col md:flex-row relative">
-        <img src={Logo} alt="Logo" className="top-left-logo w-64" />
+    <div className="bg-white overflow-hidden relative px-4 sm:px-6 md:px-8">
+      <div className="max-w-[1280px] mx-auto font-sans text-black flex flex-col md:flex-row relative items-center md:items-start">
+        
+        {/* Top-left Logo */}
+        <img src={Logo} alt="Logo" className="top-left-logo w-64 md:w-64  absolute top-4 left-4" />
 
-        <div className="w-full md:w-2/3 p-6" data-aos="fade-up">
-          <div className="mb-6">
-            <h1 className="text-5xl font-bold text-black text-center md:text-left">
+        <div className="w-full md:w-2/3 p-4 md:p-6" data-aos="fade-up">
+          <div className="mb-6 text-center md:text-left">
+            <h1 className="text-3xl md:text-5xl font-bold text-black">
               Key Benefits
             </h1>
-            <h2 className="text-2xl font-bold text-red-900 text-center md:text-left mt-2">
+            <h2 className="text-xl md:text-2xl font-bold text-red-900 mt-2">
               Importers & Traders
             </h2>
           </div>
 
-          <div className="text-center md:text-left mb-6 px-8">
-            <p className="text-red-700 text-2xl font-bold">
+          <div className="text-center md:text-left mb-6">
+            <p className="text-red-700 text-lg md:text-2xl font-bold px-2 md:px-0">
               EMPHASIZE TRANSPARENCY, TIME-SAVING, AND THE ABILITY TO AVOID
               HIDDEN COSTS.
             </p>
           </div>
 
-          <section className="mb-6">
-            <p className="text-black text-xl py-[15px]">
+          <section className="mb-6 space-y-4">
+            <p className="text-black text-lg md:text-xl py-2 md:py-[15px] px-2 md:px-0">
               <strong className="text-slate-700 font-bold">
                 Time & Effort Savings:
               </strong>{" "}
@@ -46,16 +48,14 @@ export const KeyBenefitsS = () => {
               quotes for your inquiry in one place through simplified steps,
               eliminating the need to search and contact them individually.
             </p>
-            <p className="text-black text-xl pb-[15px]">
-              <strong className="text-slate-700 font-bold">
-                Cost Savings:
-              </strong>{" "}
+            <p className="text-black text-lg md:text-xl pb-2 md:pb-[15px] px-2 md:px-0">
+              <strong className="text-slate-700 font-bold">Cost Savings:</strong>{" "}
               You will be able to compare multiple offers and select the most
               efficient option according to your priority, considering effective
               shipping options by shipping cost, transit time, payment method,
               and service provider quality rating.
             </p>
-            <p className="text-black text-xl pb-[15px]">
+            <p className="text-black text-lg md:text-xl pb-2 md:pb-[15px] px-2 md:px-0">
               <strong className="text-slate-700 font-bold">
                 Corruption Mitigation:
               </strong>{" "}
@@ -65,34 +65,27 @@ export const KeyBenefitsS = () => {
           </section>
         </div>
 
-        <div className="w-full md:w-1/3 flex flex-col items-center">
+        <div className="w-full md:w-1/3 flex flex-col items-center mb-6 md:mb-0">
           <img
             src={logo1}
             alt="logo 1"
-            className="w-3/4 mb-4"
+            className="w-28 h-28 sm:w-36 sm:h-36 md:w-48 md:h-48 mb-4"
             data-aos="fade-right"
             data-aos-delay="100"
-            data-aos-duration="1000"
-            data-aos-anchor-placement="top-bottom"
-            style={{ transform: "rotate(10deg)" }}
           />
           <img
             src={logo2}
             alt="logo 2"
-            className="w-3/4 mb-4"
+            className="w-28 h-28 sm:w-36 sm:h-36 md:w-48 md:h-48 mb-4"
             data-aos="fade-right"
             data-aos-delay="300"
-            data-aos-duration="1000"
-            style={{ transform: "rotate(10deg)" }}
           />
           <img
             src={logo3}
             alt="logo 3"
-            className="w-3/4"
+            className="w-28 h-28 sm:w-36 sm:h-36 md:w-48 md:h-48"
             data-aos="fade-right"
             data-aos-delay="500"
-            data-aos-duration="1000"
-            style={{ transform: "rotate(10deg)" }}
           />
         </div>
       </div>

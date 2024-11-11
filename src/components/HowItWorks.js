@@ -16,7 +16,7 @@ export const HowItWorks = () => {
   return (
     <section
       id="service-provider"
-      className="max-w-[1280px] mx-auto p-6 font-sans text-gray-800 flex flex-col md:flex-row"
+      className="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-8 py-6 font-sans text-gray-800 flex flex-col md:flex-row overflow-hidden"
     >
       {/* Left Column with Main Image */}
       <div
@@ -26,7 +26,7 @@ export const HowItWorks = () => {
         <img
           src={mainImage}
           alt="Main"
-          className="w-3/4 h-auto object-fill max-w-[80%] mx-auto md:mx-0"
+          className="w-3/4 h-auto object-contain mx-auto md:mx-0"
         />
       </div>
 
@@ -34,11 +34,11 @@ export const HowItWorks = () => {
       <div className="md:w-2/3 w-full md:pl-8" data-aos="fade-left">
         <div className="flex items-center mb-2">
           <h1 className="text-4xl font-bold">How it works</h1>
-          <img src={iconImage} alt="Icon" className="w-12 h-12 ml-4" />
+          <img src={iconImage} alt="Icon" className="w-10 h-10 ml-4" />
         </div>
 
         <span
-          className="block text-slate-400 text-lg ml-[75px]"
+          className="block text-slate-400 text-lg md:ml-[75px]"
           data-aos="fade-up"
         >
           For Service Provider
