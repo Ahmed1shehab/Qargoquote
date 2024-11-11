@@ -39,7 +39,7 @@ export const HowItWorks = () => {
         <div className="md:w-2/3 w-full md:pl-8" data-aos="fade-left">
           <div className="flex items-center mb-2">
             <h1 className="text-4xl font-bold">How it works</h1>
-            <img src={iconImage} alt="Icon" className="w-48  ml-4" />
+            <img src={iconImage} alt="Icon" className="w-28  ml-4" />
           </div>
 
           <span

@@ -15,7 +15,7 @@ export const Other = () => {
     });
 
     const handleResize = () => {
-      setIsLargeScreen(window.innerWidth >= 1024); // Update if screen is large (1024px or wider)
+      setIsLargeScreen(window.innerWidth >= 1024);
     };
 
     window.addEventListener("resize", handleResize);
@@ -24,12 +24,11 @@ export const Other = () => {
 
   return (
     <section className="relative max-w-[1280px] mx-auto p-8 md:p-12 font-sans text-gray-800">
-      <div className="flex justify-center pt-4" data-aos="fade-down">
+      <div className="flex justify-center md:pb-10" data-aos="fade-down">
         <img src={logo} alt="Logo" className="w-64" />
       </div>
-      {/* Main Container for Image and Content */}
+      
       <div className="flex flex-col md:flex-row items-center md:items-start text-center md:text-left relative">
-        {/* Text Content */}
         <div className="relative z-20 mt-8 md:mt-0 md:w-2/3" data-aos="fade-up">
           <p className="text-lg md:text-xl text-gray-500 mb-6">
             Imagine having a steady stream of targeted leads delivered right to
@@ -53,26 +52,26 @@ export const Other = () => {
           </p>
         </div>
 
-        {/* Image Container (only visible on large screens) */}
-        {isLargeScreen && (
-          <div
-            className="absolute bottom-0 right-0 w-40 h-40 md:w-64 md:h-64 opacity-70 flex justify-center items-center"
-            data-aos="fade-left"
-          >
-            <div className="relative w-full h-full">
-              <img
-                src={like2}
-                alt="Background Logo"
-                className="absolute inset-0 w-full h-full z-0"
-              />
-              <img
-                src={like}
-                alt="Logo"
-                className="absolute inset-0 w-full h-full z-10"
-              />
-            </div>
+        {/* Image Container - Adjusted for mobile layout */}
+        <div
+          className={`${
+            isLargeScreen ? "absolute bottom-0 right-0" : "mt-8"
+          } w-40 h-40 md:w-64 md:h-64 opacity-${isLargeScreen ? "70" : "40"} flex justify-center items-center`}
+          data-aos="fade-left"
+        >
+          <div className="relative w-full h-full">
+            <img
+              src={like2}
+              alt="Background Logo"
+              className="absolute inset-0 w-full h-full z-0"
+            />
+            <img
+              src={like}
+              alt="Logo"
+              className="absolute inset-0 w-full h-full z-10"
+            />
           </div>
-        )}
+        </div>
       </div>
     </section>
   );
