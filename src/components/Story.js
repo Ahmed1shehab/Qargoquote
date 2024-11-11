@@ -13,7 +13,10 @@ export const Story = () => {
   }, []);
 
   return (
-    <section id="Our-Story" className="max-w-[1280px] mx-auto p-10 space-y-16 md:space-y-20">
+    <section
+      id="Our-Story"
+      className="max-w-[1280px] mx-auto p-10 space-y-16 md:space-y-20"
+    >
       {/* Centered Logo */}
       <div className="flex justify-center mb-10" data-aos="fade-down">
         <img src={logo} alt="Logo" className="w-64  " />
@@ -37,7 +40,26 @@ export const Story = () => {
           solution made in Qatar, for Qatar to the world.
         </p>
       </section>
-
+      <section
+        className="flex flex-col md:flex-row items-start md:space-x-6 space-y-6 md:space-y-0"
+        data-aos="fade-up"
+        data-aos-delay="200"
+      >
+        <h1 className="text-2xl md:text-3xl font-bold text-gray-800 leading-none pt-4">
+          Logo
+        </h1>
+        <p className="text-lg md:text-xl text-gray-700 md:pl-6">
+          <strong>Our logo</strong> brings this story to life. The design
+          features pyramid-shaped triangles. inspired by the serrated edge of
+          the Qatari flag, arranged to point inward toward the center. These
+          pyramids symbolize the core of <strong>Qargoquote</strong>: a single,
+          unified platform where all logistics needs come together. This central
+          focus reinforces our goal to make logistics procurement seamless and
+          accessible, placing everything you need in one place. The colors
+          maroon and white reflect Qatar's national identity, underscoring our
+          commitment to empowering local businesses.
+        </p>
+      </section>
       {/* Vision Section */}
       <section
         className="flex flex-col md:flex-row items-start md:space-x-6 space-y-6 md:space-y-0"
