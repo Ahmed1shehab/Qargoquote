@@ -37,13 +37,17 @@ export const HowItWorks = () => {
 
         {/* Right Column with Content */}
         <div className="md:w-2/3 w-full md:pl-8" data-aos="fade-left">
-          <div className="flex items-center mb-2">
+          <div className="flex flex-col md:flex-row items-center mb-2">
             <h1 className="text-4xl font-bold">How it works</h1>
-            <img src={iconImage} alt="Icon" className="w-28  ml-4" />
+            <img
+              src={iconImage}
+              alt="Icon"
+              className="w-28 ml-4 md:ml-4 md:order-none order-2 mt-4 md:mt-0"
+            />
           </div>
 
           <span
-            className="block text-slate-400 text-lg md:ml-[75px]"
+            className="block text-slate-400 text-lg text-center md:text-left md:ml-[75px]"
             data-aos="fade-up"
           >
             For Service Provider
