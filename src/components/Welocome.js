@@ -14,9 +14,9 @@ export const Welcome = () => {
         <img
           src={q}
           alt="Logo"
-          className="w-24 h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 flip mb-4 md:mb-0"
+          className="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 flip mb-4 md:mb-0"
         />
-        <h3 className="font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-gray-500 pl-0 md:pl-6 lg:pl-10 fade-in-delay head2">
+        <h3 className="font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-gray-500 pl-0 md:pl-6 lg:pl-10 fade-in-delay head2 slide-in-left">
           Qargoquote
         </h3>
       </div>
@@ -45,3 +45,4 @@ export const Welcome = () => {
 };
 
 export default Welcome;
+
