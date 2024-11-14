@@ -15,20 +15,20 @@ export const Story = () => {
   return (
     <section
       id="Our-Story"
-      className="max-w-[1280px] mx-auto p-10 space-y-16 md:space-y-20"
+      className="max-w-[1280px] mx-auto p-6 sm:p-10 space-y-10 md:space-y-16 lg:space-y-20"
     >
       <div className="flex justify-center mb-10" data-aos="fade-down">
-        <img src={logo} alt="Logo" className="w-64" />
+        <img src={logo} alt="Logo" className="w-48 sm:w-64" />
       </div>
 
       <section
-        className="flex flex-col md:flex-row items-start md:space-x-6 space-y-6 md:space-y-0"
+        className="flex flex-col lg:flex-row items-start lg:space-x-6 space-y-4 sm:space-y-6 lg:space-y-0"
         data-aos="fade-up"
       >
-        <h1 className="text-2xl md:text-3xl font-bold text-gray-800 leading-none pt-4 text-right md:text-right whitespace-nowrap flex-grow">
+        <h1 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-800 leading-tight lg:leading-none text-center lg:text-right flex-grow">
           The Story Behind Qargoquote
         </h1>
-        <p className="text-lg md:text-xl text-gray-700 md:pl-6 max-w-prose">
+        <p className="text-base sm:text-lg lg:text-xl text-gray-700 lg:pl-6 max-w-prose">
           The name <strong>Qargoquote</strong> comes from “Cargo Quote,”
           reflecting the platform’s core mission to simplify logistics
           procurement. But there’s more to it—the “Q” is a nod to Qatar, where
@@ -40,14 +40,14 @@ export const Story = () => {
       </section>
 
       <section
-        className="flex flex-col md:flex-row items-start md:space-x-6 space-y-6 md:space-y-0"
+        className="flex flex-col lg:flex-row items-start lg:space-x-6 space-y-4 sm:space-y-6 lg:space-y-0"
         data-aos="fade-up"
         data-aos-delay="200"
       >
-        <h1 className="text-2xl md:text-3xl font-bold text-gray-800 leading-none p-11 text-right md:text-right flex-grow">
+        <h1 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-800 leading-tight lg:leading-none text-center lg:text-right flex-grow">
           Logo
         </h1>
-        <p className="text-lg md:text-xl text-gray-700 md:pl-6 max-w-prose">
+        <p className="text-base sm:text-lg lg:text-xl text-gray-700 lg:pl-6 max-w-prose">
           <strong>Our logo</strong> brings this story to life. The design
           features pyramid-shaped triangles inspired by the serrated edge of
           the Qatari flag, arranged to point inward toward the center. These
@@ -62,14 +62,14 @@ export const Story = () => {
 
       {/* Vision Section */}
       <section
-        className="flex flex-col md:flex-row items-start md:space-x-6 space-y-6 md:space-y-0"
+        className="flex flex-col lg:flex-row items-start lg:space-x-6 space-y-4 sm:space-y-6 lg:space-y-0"
         data-aos="fade-up"
         data-aos-delay="200"
       >
-        <h1 className="text-2xl md:text-3xl font-bold text-gray-800 leading-none p-11 text-right md:text-right flex-grow">
+        <h1 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-800 leading-tight lg:leading-none text-center lg:text-right flex-grow">
           Vision
         </h1>
-        <p className="text-lg md:text-xl text-gray-700 md:pl-6 max-w-prose">
+        <p className="text-base sm:text-lg lg:text-xl text-gray-700 lg:pl-6 max-w-prose">
           <strong>Qargoquote</strong> embodies our vision to bring innovation,
           transparency, and efficiency to Qatar’s logistics market. It’s not
           just a name—it’s a statement of our commitment to empowering local
