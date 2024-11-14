@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaPlus, FaMinus,  } from "react-icons/fa";
+import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 
 export const Faqs = () => {
   const [openIndex, setOpenIndex] = useState(null);
@@ -63,7 +63,7 @@ export const Faqs = () => {
             >
               {faq.question}
               <span>
-                {openIndex === index ? <FaMinus /> : <FaPlus />}
+                {openIndex === index ? <FaChevronUp /> : <FaChevronDown />}
               </span>
             </button>
             {openIndex === index && (
