@@ -1,9 +1,6 @@
-import { useState } from "react";
 import { FaRegCommentDots } from "react-icons/fa"; // Importing message icon from react-icons
 
-export const Form = () => {
-  const [isFormOpen, setIsFormOpen] = useState(false);
-
+export const Form = ({ isFormOpen, setIsFormOpen }) => {
   const toggleForm = () => setIsFormOpen(!isFormOpen);
 
   return (
@@ -13,7 +10,7 @@ export const Form = () => {
         className="fixed bottom-4 right-4 p-4 bg-white text-white rounded-full cursor-pointer shadow-lg"
         onClick={toggleForm}
       >
-        <FaRegCommentDots size={24} className="text-rose-900	" />
+        <FaRegCommentDots size={24} className="text-rose-900" />
       </div>
 
       {/* Form Container */}

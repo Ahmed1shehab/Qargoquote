@@ -2,7 +2,7 @@ import { useState } from "react";
 import { FaChevronDown } from "react-icons/fa";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 
-export const Header = () => {
+export const Header = ({ openForm }) => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
@@ -93,8 +93,8 @@ export const Header = () => {
             <li className="after:content-['|'] after:ml-4 last:after:content-[''] hover:cursor-pointer">
               <a href="/">Login</a>
             </li>
-            <li id="FAQ" className="after:content-['|'] after:ml-4 last:after:content-[''] hover:cursor-pointer">
-              <a href="/">Contact Us</a>
+            <li id="contact-us" className="after:content-['|'] after:ml-4 last:after:content-[''] hover:cursor-pointer">
+              <a href="/" onClick={(e) => { e.preventDefault(); openForm(); }}>Contact Us</a>
             </li>
           </ul>
         </div>

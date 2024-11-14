@@ -11,7 +11,7 @@ import {
   HowItWorksSecond,
   LogisticsIntro,
   KeyBenefitsS,
-  Form,
+ 
   GetStarted,
   Faqs
 } from "../components";
@@ -31,7 +31,7 @@ export const MainPage = () => {
       <KeyBenefitsS />
       <Faqs />
       <GetStarted />
-      <Form />
+    
     </main>
   );
 };
