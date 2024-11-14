@@ -79,14 +79,22 @@ export const Header = () => {
                       SOP
                     </Link>
                   </li>
+                  
+                
                 </ul>
               </div>
+            </li>
+            <li id="FAQ" className="after:content-['|'] after:ml-4 last:after:content-[''] hover:cursor-pointer">
+              <a href="/">FAQ</a>
             </li>
             <li className="after:content-['|'] after:ml-4 last:after:content-[''] hover:cursor-pointer">
               <a href="/">Register</a>
             </li>
             <li className="after:content-['|'] after:ml-4 last:after:content-[''] hover:cursor-pointer">
               <a href="/">Login</a>
+            </li>
+            <li id="FAQ" className="after:content-['|'] after:ml-4 last:after:content-[''] hover:cursor-pointer">
+              <a href="/">Contact Us</a>
             </li>
           </ul>
         </div>

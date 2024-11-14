@@ -52,7 +52,7 @@ export const Faqs = () => {
   ];
 
   return (
-    <div className="container mx-auto px-4 mt-8">
+    <div className="container mx-auto px-4 mt-8" id="FAQ">
       <h2 className="text-2xl font-bold mb-6 text-center">Frequently Asked Questions (FAQ)</h2>
       <div className="space-y-4">
         {faqs.map((faq, index) => (
