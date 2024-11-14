@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import "aos/dist/aos.css";
-import q from "../assets/qq.png";
+
 
 export const WhatIsQargoquote = () => {
   const [visibleSections, setVisibleSections] = useState({});
