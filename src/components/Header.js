@@ -1,36 +1,26 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { FaChevronDown } from "react-icons/fa";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 export const Header = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
 
-  useEffect(() => {
-    // Smooth scrolling behavior
-    const handleSmoothScroll = (e) => {
-      if (
-        e.target.tagName === "A" &&
-        e.target.getAttribute("href").startsWith("#")
-      ) {
-        e.preventDefault();
-        const targetId = e.target.getAttribute("href");
-        const targetElement = document.querySelector(targetId);
-
-        if (targetElement) {
-          window.scrollTo({
-            top: targetElement.offsetTop,
-            behavior: "smooth",
-          });
-        }
+  const handleSmoothScroll = (e, targetId) => {
+    e.preventDefault();
+    if (location.pathname !== "/") {
+      navigate(`/${targetId}`);
+    } else {
+      const targetElement = document.querySelector(targetId);
+      if (targetElement) {
+        window.scrollTo({
+          top: targetElement.offsetTop,
+          behavior: "smooth",
+        });
       }
-    };
-
-    document.addEventListener("click", handleSmoothScroll);
-
-    // Cleanup event listener on component unmount
-    return () => {
-      document.removeEventListener("click", handleSmoothScroll);
-    };
-  }, []);
+    }
+  };
 
   return (
     <header>
@@ -38,17 +28,22 @@ export const Header = () => {
         <div className="max-w-[1280px] mx-auto flex items-center justify-center md:justify-end px-4">
           <ul className="flex text-xs sm:text-[0.75rem] space-x-4 m-2 whitespace-nowrap">
             <li className="after:content-['|'] after:ml-4 last:after:content-[''] hover:cursor-pointer">
-              <a href="#Qargoquote">What is Qargoquote</a>
+              <a
+                href="#Qargoquote"
+                onClick={(e) => handleSmoothScroll(e, "#Qargoquote")}
+              >
+                What is Qargoquote
+              </a>
             </li>
-          
+
             <li
               className="relative hover:cursor-pointer"
               onMouseEnter={() => setIsDropdownOpen(true)}
               onMouseLeave={() => setIsDropdownOpen(false)}
             >
               <a
-                href="#Subscribe"
-                onClick={(e) => e.preventDefault()}
+                href="#other"
+                onClick={(e) => handleSmoothScroll(e, "#other")}
                 className="flex items-center after:content-['|'] after:ml-4 last:after:content-['']"
               >
                 Solutions
@@ -64,6 +59,7 @@ export const Header = () => {
                   <li>
                     <a
                       href="#Service"
+                      onClick={(e) => handleSmoothScroll(e, "#Service")}
                       className="block px-4 py-2 hover:bg-gray-100"
                     >
                       Service providers
@@ -72,16 +68,19 @@ export const Header = () => {
                   <li>
                     <a
                       href="#Importer"
+                      onClick={(e) => handleSmoothScroll(e, "#Importer")}
                       className="block px-4 py-2 hover:bg-gray-100"
                     >
                       Importers and traders
                     </a>
                   </li>
-                  
+                  <li>
+                    <Link to="/SOP" className="block px-4 py-2 hover:bg-gray-100">
+                      SOP
+                    </Link>
+                  </li>
                 </ul>
               </div>
-
-              
             </li>
             <li className="after:content-['|'] after:ml-4 last:after:content-[''] hover:cursor-pointer">
               <a href="/">Register</a>

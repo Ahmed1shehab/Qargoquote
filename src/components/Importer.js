@@ -42,7 +42,7 @@ export const Importer = () => {
           </p>
         </div>
 
-        <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 mb-8">
+        <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 ">
           <div
             className="w-full md:w-1/2 h-80"
             data-aos="fade-right"

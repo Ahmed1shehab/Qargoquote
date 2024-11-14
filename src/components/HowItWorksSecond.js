@@ -15,9 +15,9 @@ export const HowItWorksSecond = () => {
 
   return (
     <section>
-      <div className="flex justify-center pt-4" data-aos="fade-down">
-        <img src={logo} alt="Logo" className="w-64" />
-      </div>
+       <div className="flex lg:justify-start justify-center pt-4" data-aos="fade-down">
+  <img src={logo} alt="Logo" className="w-64" />
+</div>
       <div className="max-w-[1280px] mx-auto p-4 sm:p-6 font-sans text-gray-800 flex flex-col md:flex-row items-center md:items-start overflow-hidden">
         {/* Left Column with Main Image */}
         <div

@@ -23,7 +23,7 @@ export const Other = () => {
   }, []);
 
   return (
-    <section className="relative max-w-[1280px] mx-auto p-8 md:p-12 font-sans text-gray-800">
+    <section id ="other" className="relative max-w-[1280px] mx-auto p-8 md:p-12 font-sans text-gray-800">
       <div className="flex justify-center md:pb-10" data-aos="fade-down">
         <img src={logo} alt="Logo" className="w-64" />
       </div>

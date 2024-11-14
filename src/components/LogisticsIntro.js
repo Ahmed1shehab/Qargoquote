@@ -1,8 +1,8 @@
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import pic3 from "../../assets/Logistics/pic3.png";
-import Logo from "../../assets/q.png";
+import pic3 from "../assets/Logistics/pic3.png";
+// import Logo from "../../assets/q.png";
 import "./LogisticsAndKey.css";
 
 export const LogisticsIntro = () => {
@@ -13,24 +13,24 @@ export const LogisticsIntro = () => {
       offset: 100,
     });
 
-    const handleScroll = () => {
-      const logoElement = document.querySelector(".logo-container");
-      const keyBenefitsLogo = document.querySelector(".top-left-logo");
+    // const handleScroll = () => {
+    //   const logoElement = document.querySelector(".logo-container");
+    //   const keyBenefitsLogo = document.querySelector(".top-left-logo");
 
-      if (logoElement) {
-        const rect = logoElement.getBoundingClientRect();
-        if (rect.top < window.innerHeight && rect.bottom >= 0) {
-          logoElement.classList.add("scrolled");
-          keyBenefitsLogo.classList.add("visible");
-        } else {
-          logoElement.classList.remove("scrolled");
-          keyBenefitsLogo.classList.remove("visible");
-        }
-      }
-    };
+    //   if (logoElement) {
+    //     const rect = logoElement.getBoundingClientRect();
+    //     if (rect.top < window.innerHeight && rect.bottom >= 0) {
+    //       logoElement.classList.add("scrolled");
+    //       keyBenefitsLogo.classList.add("visible");
+    //     } else {
+    //       logoElement.classList.remove("scrolled");
+    //       keyBenefitsLogo.classList.remove("visible");
+    //     }
+    //   }
+    // };
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    // window.addEventListener("scroll", handleScroll);
+    // return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
@@ -88,13 +88,13 @@ export const LogisticsIntro = () => {
           </div>
         </div>
 
-        <div className="logo-container" data-aos="fade-in">
+        {/* <div className="logo-container" data-aos="fade-in">
           <img
             src={Logo}
             alt="Logo"
             className="logo w-64  sm:w-64  md:w-64  mx-auto"
           />
-        </div>
+        </div> */}
       </div>
     </div>
   );

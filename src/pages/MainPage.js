@@ -10,10 +10,10 @@ import {
   Importer,
   HowItWorksSecond,
   LogisticsIntro,
-  Ending,
   KeyBenefitsS,
   Form,
   GetStarted,
+  Faqs
 } from "../components";
 export const MainPage = () => {
   return (
@@ -26,10 +26,10 @@ export const MainPage = () => {
       <KeyBenefits />
       <HowItWorks />
       <Importer />
-      <HowItWorksSecond />
       <LogisticsIntro />
+      <HowItWorksSecond />
       <KeyBenefitsS />
-      <Ending />
+      <Faqs />
       <GetStarted />
       <Form />
     </main>

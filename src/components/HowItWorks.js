@@ -16,9 +16,9 @@ export const HowItWorks = () => {
 
   return (
     <section>
-      <div className="flex justify-center pt-4" data-aos="fade-down">
-        <img src={logo} alt="Logo" className="w-64" />
-      </div>
+     <div className="flex lg:justify-end justify-center pt-4" data-aos="fade-down">
+  <img src={logo} alt="Logo" className="w-64" />
+</div>
       <div
         id="service-provider"
         className="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-8 py-6 font-sans text-gray-800 flex flex-col md:flex-row overflow-hidden"

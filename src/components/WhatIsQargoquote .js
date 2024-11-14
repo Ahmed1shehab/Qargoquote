@@ -7,7 +7,7 @@ export const WhatIsQargoquote = () => {
 
   // Declare each ref individually at the top level
   const titleRef = useRef(null);
-  const imageRef = useRef(null);
+
   const introRef = useRef(null);
   const subtitleRef = useRef(null);
   const listRefs = useRef([]); // Array for list items
@@ -33,7 +33,7 @@ export const WhatIsQargoquote = () => {
 
     // Observe each ref individually
     observer.observe(titleRef.current);
-    observer.observe(imageRef.current);
+  
     observer.observe(introRef.current);
     observer.observe(subtitleRef.current);
     observer.observe(conclusionRef.current);
@@ -45,28 +45,15 @@ export const WhatIsQargoquote = () => {
   return (
     <section className="bg-rose-900 p-6 mx-auto" id="Qargoquote">
       <div className="max-w-[1280px] mx-auto space-y-8">
-        {/* Responsive Layout for Image and Title */}
-        <div className="flex flex-col md:flex-row md:items-center ">
-          <img
-            ref={imageRef}
-            src={q}
-            alt="Logo"
-            data-section="image"
-            className={`w-32 h-32 md:w-40 md:h-40 mx-auto md:mx-0 mb-4 md:mb-0 transition-opacity duration-700 ${
-              visibleSections.image ? "opacity-100" : "opacity-0"
-            }`}
-          />
           <h2
             ref={titleRef}
             data-section="title"
-            className={`text-3xl font-bold pl-4 text-white text-center md:text-left transition-opacity duration-700 head2 ${
+            className={`text-3xl font-bold  text-white text-center md:text-left transition-opacity duration-700 head2 ${
               visibleSections.title ? "opacity-100" : "opacity-0"
             }`}
           >
             What is Qargoquote?
           </h2>
-        </div>
-
         <p
           ref={introRef}
           data-section="intro"
