@@ -26,8 +26,8 @@ export const Header = ({ openForm }) => {
     <header>
       <div className="bg-rose-900 text-white min-h-6">
         <div className="max-w-[1280px] mx-auto flex items-center justify-center md:justify-end px-4">
-          <ul className="flex text-xs sm:text-[0.75rem] space-x-4 m-2 whitespace-nowrap">
-            <li className="after:content-['|'] after:ml-4 last:after:content-[''] hover:cursor-pointer">
+          <ul className="flex text-xs sm:text-sm md:text-base space-x-2 sm:space-x-4 m-2 whitespace-nowrap">
+            <li className="after:content-['|'] after:ml-2 sm:after:ml-4 last:after:content-[''] hover:cursor-pointer">
               <a
                 href="#Qargoquote"
                 onClick={(e) => handleSmoothScroll(e, "#Qargoquote")}
@@ -44,7 +44,7 @@ export const Header = ({ openForm }) => {
               <a
                 href="#other"
                 onClick={(e) => handleSmoothScroll(e, "#other")}
-                className="flex items-center after:content-['|'] after:ml-4 last:after:content-['']"
+                className="flex items-center after:content-['|'] after:ml-2 sm:after:ml-4 last:after:content-['']"
               >
                 Solutions
                 <FaChevronDown className="ml-1" />
@@ -53,9 +53,9 @@ export const Header = ({ openForm }) => {
                 id="dropdownNavbar"
                 className={`${
                   isDropdownOpen ? "block" : "hidden"
-                } z-10 font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 absolute top-full left-[calc(50%-50px)] transform -translate-x-1/2 md:left-0 md:translate-x-0 p-4 md:p-0`}
+                } z-10 font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 absolute top-full left-[calc(50%-50px)] transform -translate-x-1/2 md:left-0 md:translate-x-0 p-2 sm:p-4`}
               >
-                <ul className="py-2 text-sm text-gray-700">
+                <ul className="py-1 sm:py-2 text-xs sm:text-sm text-gray-700">
                   <li>
                     <a
                       href="#Service"
@@ -79,21 +79,20 @@ export const Header = ({ openForm }) => {
                       SOP
                     </Link>
                   </li>
-                  
-                
                 </ul>
               </div>
             </li>
-            <li id="FAQ" className="after:content-['|'] after:ml-4 last:after:content-[''] hover:cursor-pointer">
+
+            <li className="after:content-['|'] after:ml-2 sm:after:ml-4 last:after:content-[''] hover:cursor-pointer">
               <a href="/">FAQ</a>
             </li>
-            <li className="after:content-['|'] after:ml-4 last:after:content-[''] hover:cursor-pointer">
+            <li className="after:content-['|'] after:ml-2 sm:after:ml-4 last:after:content-[''] hover:cursor-pointer">
               <a href="/">Register</a>
             </li>
-            <li className="after:content-['|'] after:ml-4 last:after:content-[''] hover:cursor-pointer">
+            <li className="after:content-['|'] after:ml-2 sm:after:ml-4 last:after:content-[''] hover:cursor-pointer">
               <a href="/">Login</a>
             </li>
-            <li id="contact-us" className="after:content-['|'] after:ml-4 last:after:content-[''] hover:cursor-pointer">
+            <li className="after:content-['|'] after:ml-2 sm:after:ml-4 last:after:content-[''] hover:cursor-pointer">
               <a href="/" onClick={(e) => { e.preventDefault(); openForm(); }}>Contact Us</a>
             </li>
           </ul>
