@@ -8,9 +8,9 @@ import pic2 from "../assets/Logistics/pic2.png";
 export const Logistics = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Animation duration in milliseconds
-      easing: "ease-in-out", // Easing function for smooth animation
-      once: true, // Trigger animation only once on scroll
+      duration: 1000,
+      easing: "ease-in-out",
+      once: true,
     });
   }, []);
 

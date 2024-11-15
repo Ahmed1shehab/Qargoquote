@@ -3,9 +3,8 @@
 @tailwind utilities;
 
 .app-container {
-    max-width: 1280px;
-    margin: auto;
-    padding: 10px;
-    min-height: 90vh;
-
+  max-width: 1280px;
+  margin: auto;
+  padding: 10px;
+  min-height: 90vh;
 }

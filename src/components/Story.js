@@ -49,8 +49,8 @@ export const Story = () => {
         </h1>
         <p className="text-base sm:text-lg lg:text-xl text-gray-700 lg:pl-6 max-w-prose">
           <strong>Our logo</strong> brings this story to life. The design
-          features pyramid-shaped triangles inspired by the serrated edge of
-          the Qatari flag, arranged to point inward toward the center. These
+          features pyramid-shaped triangles inspired by the serrated edge of the
+          Qatari flag, arranged to point inward toward the center. These
           pyramids symbolize the core of <strong>Qargoquote</strong>: a single,
           unified platform where all logistics needs come together. This central
           focus reinforces our goal to make logistics procurement seamless and
@@ -59,8 +59,6 @@ export const Story = () => {
           commitment to empowering local businesses.
         </p>
       </section>
-
-      {/* Vision Section */}
       <section
         className="flex flex-col lg:flex-row items-start lg:space-x-6 space-y-4 sm:space-y-6 lg:space-y-0"
         data-aos="fade-up"

@@ -4,8 +4,7 @@ import "aos/dist/aos.css";
 import logo1 from "../assets/KeyBenefits/logo1.png";
 import logo2 from "../assets/KeyBenefits/logo2.png";
 import logo3 from "../assets/KeyBenefits/logo3.png";
-// import Logo from "../../assets/q.png";
-import "./LogisticsAndKey.css";
+
 
 export const KeyBenefitsS = () => {
   useEffect(() => {
@@ -16,12 +15,7 @@ export const KeyBenefitsS = () => {
     <div className="bg-rose-900 overflow-hidden relative px-4 sm:px-6 md:px-8">
       <div className="max-w-[1280px] mx-auto font-sans text-black flex flex-col md:flex-row relative items-center md:items-start">
        
-        {/* <img
-          src={Logo}
-          alt="Logo"
-          className="top-left-logo w-64 md:w-64  absolute top-4 left-4"
-        /> */}
-
+       
         <div className="w-full md:w-2/3 p-4 md:p-6" data-aos="fade-up">
           <div className="mb-6 text-center md:text-left">
             <h1 className="text-5xl md:text-5xl font-bold text-white">

@@ -1,4 +1,3 @@
-import React from "react";
 import {
   Welcome,
   WhatIsQargoquote,
@@ -11,9 +10,8 @@ import {
   HowItWorksSecond,
   LogisticsIntro,
   KeyBenefitsS,
- 
   GetStarted,
-  Faqs
+  Faqs,
 } from "../components";
 export const MainPage = () => {
   return (
@@ -31,7 +29,6 @@ export const MainPage = () => {
       <KeyBenefitsS />
       <Faqs />
       <GetStarted />
-    
     </main>
   );
 };

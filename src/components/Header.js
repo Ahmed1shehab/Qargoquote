@@ -75,7 +75,10 @@ export const Header = ({ openForm }) => {
                     </a>
                   </li>
                   <li>
-                    <Link to="/SOP" className="block px-2 py-1 sm:px-4 sm:py-2 hover:bg-gray-100">
+                    <Link
+                      to="/SOP"
+                      className="block px-2 py-1 sm:px-4 sm:py-2 hover:bg-gray-100"
+                    >
                       SOP
                     </Link>
                   </li>
@@ -84,10 +87,7 @@ export const Header = ({ openForm }) => {
             </li>
 
             <li className="after:content-['|'] after:ml-2 sm:after:ml-3 md:after:ml-4 last:after:content-[''] hover:cursor-pointer">
-              <a
-                href="#FAQ"
-                onClick={(e) => handleSmoothScroll(e, "#FAQ")}
-              >
+              <a href="#FAQ" onClick={(e) => handleSmoothScroll(e, "#FAQ")}>
                 FAQ
               </a>
             </li>
@@ -98,7 +98,15 @@ export const Header = ({ openForm }) => {
               <a href="/">Login</a>
             </li>
             <li className="after:content-['|'] after:ml-2 sm:after:ml-3 md:after:ml-4 last:after:content-[''] hover:cursor-pointer">
-              <a href="/" onClick={(e) => { e.preventDefault(); openForm(); }}>Contact Us</a>
+              <a
+                href="/"
+                onClick={(e) => {
+                  e.preventDefault();
+                  openForm();
+                }}
+              >
+                Contact Us
+              </a>
             </li>
           </ul>
         </div>

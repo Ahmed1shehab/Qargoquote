@@ -1,11 +1,10 @@
-import { FaRegCommentDots } from "react-icons/fa"; // Importing message icon from react-icons
+import { FaRegCommentDots } from "react-icons/fa";
 
 export const Form = ({ isFormOpen, setIsFormOpen }) => {
   const toggleForm = () => setIsFormOpen(!isFormOpen);
 
   return (
     <div className="relative">
-      {/* Floating Icon */}
       <div
         className="fixed bottom-4 right-4 p-4 bg-white text-white rounded-full cursor-pointer shadow-lg"
         onClick={toggleForm}
@@ -13,7 +12,6 @@ export const Form = ({ isFormOpen, setIsFormOpen }) => {
         <FaRegCommentDots size={24} className="text-rose-900" />
       </div>
 
-      {/* Form Container */}
       {isFormOpen && (
         <div className="fixed bottom-20 right-4 w-72 p-6 bg-white shadow-lg rounded-lg">
           <h2 className="text-lg font-bold mb-4 text-gray-800">Contact Us</h2>

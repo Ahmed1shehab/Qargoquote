@@ -15,11 +15,13 @@ export const HowItWorksSecond = () => {
 
   return (
     <section>
-       <div className="flex lg:justify-start justify-center pt-4" data-aos="fade-down">
-  <img src={logo} alt="Logo" className="w-64" />
-</div>
+      <div
+        className="flex lg:justify-start justify-center pt-4"
+        data-aos="fade-down"
+      >
+        <img src={logo} alt="Logo" className="w-64" />
+      </div>
       <div className="max-w-[1280px] mx-auto p-4 sm:p-6 font-sans text-gray-800 flex flex-col md:flex-row items-center md:items-start overflow-hidden">
-        {/* Left Column with Main Image */}
         <div
           className="md:w-1/3 w-full mb-6 md:mb-0 flex justify-center md:justify-start"
           data-aos="fade-right"
@@ -30,8 +32,6 @@ export const HowItWorksSecond = () => {
             className=" h-auto object-contain mx-auto md:mx-0"
           />
         </div>
-
-        {/* Right Column with Content */}
         <div className="md:w-2/3 w-full md:pl-8" data-aos="fade-left">
           <div className="flex flex-col items-center md:flex-row md:items-center justify-center md:justify-start mb-4">
             <h1 className="text-3xl sm:text-4xl font-bold text-center md:text-left">

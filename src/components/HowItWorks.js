@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import AOS from "aos";
-import "aos/dist/aos.css"; // Import AOS styles
+import "aos/dist/aos.css";
 import mainImage from "../assets/HowItWorks/main.png";
 import iconImage from "../assets/HowItWorks/icon.png";
 import logo from "../assets/q.png";
@@ -8,22 +8,25 @@ import logo from "../assets/q.png";
 export const HowItWorks = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Animation duration
+      duration: 1000,
       easing: "ease-in-out",
-      once: true, // Only animate once
+      once: true,
     });
   }, []);
 
   return (
     <section>
-     <div className="flex lg:justify-end justify-center pt-4" data-aos="fade-down">
-  <img src={logo} alt="Logo" className="w-64" />
-</div>
+      <div
+        className="flex lg:justify-end justify-center pt-4"
+        data-aos="fade-down"
+      >
+        <img src={logo} alt="Logo" className="w-64" />
+      </div>
       <div
         id="service-provider"
         className="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-8 py-6 font-sans text-gray-800 flex flex-col md:flex-row overflow-hidden"
       >
-        {/* Left Column with Main Image */}
+        
         <div
           className="md:w-1/3 w-full mb-6 md:mb-0 flex justify-center md:justify-start"
           data-aos="fade-right"
@@ -35,7 +38,7 @@ export const HowItWorks = () => {
           />
         </div>
 
-        {/* Right Column with Content */}
+        
         <div className="md:w-2/3 w-full md:pl-8" data-aos="fade-left">
           <div className="flex flex-col md:flex-row items-center mb-2">
             <h1 className="text-4xl font-bold">How it works</h1>

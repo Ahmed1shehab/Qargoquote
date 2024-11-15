@@ -14,7 +14,6 @@ export const Ending = () => {
   return (
     <div className="bg-black py-4 overflow-hidden">
       <div className="max-w-[1200px] mx-auto flex flex-col md:flex-row items-center md:items-start text-center md:text-left px-4 sm:px-6 md:px-12 gap-8">
-        {/* Text Section */}
         <div
           className="md:w-1/2 flex items-center justify-center md:justify-start"
           data-aos="fade-right"
@@ -28,7 +27,6 @@ export const Ending = () => {
           </p>
         </div>
 
-        {/* Image Section */}
         <div
           className="md:w-1/2 flex justify-center md:justify-end"
           data-aos="fade-left"

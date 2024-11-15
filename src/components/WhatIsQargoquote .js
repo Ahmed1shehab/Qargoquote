@@ -1,16 +1,13 @@
 import { useState, useEffect, useRef } from "react";
 import "aos/dist/aos.css";
 
-
 export const WhatIsQargoquote = () => {
   const [visibleSections, setVisibleSections] = useState({});
 
-  // Declare each ref individually at the top level
   const titleRef = useRef(null);
-
   const introRef = useRef(null);
   const subtitleRef = useRef(null);
-  const listRefs = useRef([]); // Array for list items
+  const listRefs = useRef([]);
   const conclusionRef = useRef(null);
 
   useEffect(() => {
@@ -31,9 +28,7 @@ export const WhatIsQargoquote = () => {
       }
     );
 
-    // Observe each ref individually
     observer.observe(titleRef.current);
-  
     observer.observe(introRef.current);
     observer.observe(subtitleRef.current);
     observer.observe(conclusionRef.current);
@@ -45,15 +40,15 @@ export const WhatIsQargoquote = () => {
   return (
     <section className="bg-rose-900 p-6 mx-auto" id="Qargoquote">
       <div className="max-w-[1280px] mx-auto space-y-8">
-          <h2
-            ref={titleRef}
-            data-section="title"
-            className={`text-3xl font-bold  text-white text-center md:text-left transition-opacity duration-700 head2 ${
-              visibleSections.title ? "opacity-100" : "opacity-0"
-            }`}
-          >
-            What is Qargoquote?
-          </h2>
+        <h2
+          ref={titleRef}
+          data-section="title"
+          className={`text-3xl font-bold  text-white text-center md:text-left transition-opacity duration-700 head2 ${
+            visibleSections.title ? "opacity-100" : "opacity-0"
+          }`}
+        >
+          What is Qargoquote?
+        </h2>
         <p
           ref={introRef}
           data-section="intro"

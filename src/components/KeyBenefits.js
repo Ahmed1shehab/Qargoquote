@@ -17,12 +17,11 @@ export const KeyBenefits = () => {
   return (
     <section id="key-benefits" className="bg-rose-900 relative">
       <div className="max-w-[1280px] mx-auto font-sans text-slate-300 flex flex-col md:flex-row">
-        {/* Left Column with Images, hidden on smaller screens */}
         <div className="w-full md:w-1/3 flex flex-col items-center md:block hidden space-y-2 md:space-y-3">
           <img
             src={logo1}
             alt="logo 1"
-            className="w-4/5 md:w-full rotate-6" // Largest logo
+            className="w-4/5 md:w-full rotate-6"
             data-aos="fade-right"
             data-aos-delay="100"
             data-aos-duration="1000"
@@ -31,7 +30,7 @@ export const KeyBenefits = () => {
           <img
             src={logo2}
             alt="logo 2"
-            className="w-3/4 md:w-3/4 rotate-6" // Slightly smaller
+            className="w-3/4 md:w-3/4 rotate-6"
             data-aos="fade-right"
             data-aos-delay="300"
             data-aos-duration="1000"
@@ -39,14 +38,13 @@ export const KeyBenefits = () => {
           <img
             src={logo3}
             alt="logo 3"
-            className="w-1/2 md:w-1/2 rotate-6" // Smallest logo
+            className="w-1/2 md:w-1/2 rotate-6"
             data-aos="fade-right"
             data-aos-delay="500"
             data-aos-duration="1000"
           />
         </div>
 
-        {/* Right Column with Text Content */}
         <div className="w-full md:w-2/3 p-6" data-aos="fade-up">
           <h1 className="text-4xl font-bold mb-6 text-white text-center md:text-left">
             Key Benefits

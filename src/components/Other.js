@@ -13,7 +13,6 @@ export const Other = () => {
       duration: 1000,
       once: true,
     });
-
     const handleResize = () => {
       setIsLargeScreen(window.innerWidth >= 1024);
     };
@@ -56,8 +55,6 @@ export const Other = () => {
             and boost your business with qualified sales leads.
           </p>
         </div>
-
-        {/* Image Container - Adjusted for mobile layout */}
         <div
           className={`${
             isLargeScreen ? "absolute bottom-0 right-0" : "mt-8 mx-auto"

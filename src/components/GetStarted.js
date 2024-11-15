@@ -15,9 +15,7 @@ export const GetStarted = () => {
 
   return (
     <div className="bg-black text-white relative overflow-hidden pb-8">
-
       <div className="text-white max-w-[1280px] mx-auto flex flex-col md:flex-row items-center px-4 sm:px-6 md:px-12">
-        {/* Left Column */}
         <div
           className="md:w-1/2 relative flex flex-col items-center md:items-start mb-8 md:mb-0"
           data-aos="fade-right"
@@ -31,24 +29,21 @@ export const GetStarted = () => {
             Get Started !!
           </h1>
 
-          {/* Additional Texts under Get Started */}
           <div className="flex flex-col items-start mt-4" data-aos="fade-in">
-  <div className="flex flex-row items-start space-x-4">
-    <span className="text-2xl sm:text-3xl md:text-4xl font-semibold text-white line-through-red">
-      Today
-    </span>
-    <span className="text-2xl sm:text-3xl md:text-4xl font-semibold text-white">
-      Now!
-    </span>
-  </div>
-  <p className="text-md sm:text-lg md:text-xl text-gray-400 mt-2 text-left">
-    Cost savings for longer terms...
-  </p>
-</div>
-
+            <div className="flex flex-row items-start space-x-4">
+              <span className="text-2xl sm:text-3xl md:text-4xl font-semibold text-white line-through-red">
+                Today
+              </span>
+              <span className="text-2xl sm:text-3xl md:text-4xl font-semibold text-white">
+                Now!
+              </span>
+            </div>
+            <p className="text-md sm:text-lg md:text-xl text-gray-400 mt-2 text-left">
+              Cost savings for longer terms...
+            </p>
+          </div>
         </div>
 
-        {/* Right Column */}
         <div
           className="md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left md:ml-12"
           data-aos="fade-left"
@@ -67,7 +62,7 @@ export const GetStarted = () => {
       </div>
 
       <div
-        className="hidden md:flex items-center justify-end px-4 sm:px-6 md:px-12 -mt-16" 
+        className="hidden md:flex items-center justify-end px-4 sm:px-6 md:px-12 -mt-16"
         data-aos="fade-in"
       >
         <img src={logo} alt="Logo" className="w-32 md:w-48 lg:w-64" />

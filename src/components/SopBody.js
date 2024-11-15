@@ -1,11 +1,10 @@
-import React from "react";
 import logo from "../assets/q.png";
 export const SOP1 = () => {
   return (
     <div className="container mx-auto px-4 mt-8">
-          <div className="flex justify-center" >
-      <img src={logo} alt="Logo" className="w-80" />
-    </div>
+      <div className="flex justify-center">
+        <img src={logo} alt="Logo" className="w-80" />
+      </div>
       <h1 className="text-3xl font-bold text-center mb-6 p-10">
         Standard Operating Procedure (SOP) for Qargoquote
       </h1>
