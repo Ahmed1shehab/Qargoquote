@@ -34,7 +34,7 @@ export const HowItWorks = () => {
           <img
             src={mainImage}
             alt="Main"
-            className="w-3/4 h-auto object-contain mx-auto md:mx-0"
+            className="lg:w-3/4 h-auto object-contain mx-auto md:mx-0"
           />
         </div>
 

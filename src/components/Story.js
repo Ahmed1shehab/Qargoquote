@@ -17,15 +17,15 @@ export const Story = () => {
       id="Our-Story"
       className="max-w-[1280px] mx-auto p-6 sm:p-10 space-y-10 md:space-y-16 lg:space-y-20"
     >
-      <div className="flex justify-center mb-10" data-aos="fade-down">
+      <div className="flex justify-center" data-aos="fade-down">
         <img src={logo} alt="Logo" className="w-48 sm:w-64" />
       </div>
 
       <section
-        className="flex flex-col lg:flex-row items-start lg:space-x-6 space-y-4 sm:space-y-6 lg:space-y-0"
+        className="flex flex-col lg:flex-row items-start lg:space-x-6 space-y-4 sm:space-y-6 lg:space-y-0 "
         data-aos="fade-up"
       >
-        <h1 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-800 leading-tight lg:leading-none text-center lg:text-right flex-grow">
+        <h1 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-800 leading-tight lg:leading-none text-center lg:text-right flex-grow m-0 pt-0">
           The Story Behind Qargoquote
         </h1>
         <p className="text-base sm:text-lg lg:text-xl text-gray-700 lg:pl-6 max-w-prose">
@@ -44,7 +44,7 @@ export const Story = () => {
         data-aos="fade-up"
         data-aos-delay="200"
       >
-        <h1 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-800 leading-tight lg:leading-none text-center lg:text-right flex-grow">
+        <h1 className="m-0 pt-0 text-xl sm:text-2xl lg:text-3xl font-bold text-gray-800 leading-tight lg:leading-none text-center lg:text-right flex-grow">
           Logo
         </h1>
         <p className="text-base sm:text-lg lg:text-xl text-gray-700 lg:pl-6 max-w-prose">
@@ -64,7 +64,7 @@ export const Story = () => {
         data-aos="fade-up"
         data-aos-delay="200"
       >
-        <h1 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-800 leading-tight lg:leading-none text-center lg:text-right flex-grow">
+        <h1 className="m-0 pt-0 text-xl sm:text-2xl lg:text-3xl font-bold text-gray-800 leading-tight lg:leading-none text-center lg:text-right flex-grow">
           Vision
         </h1>
         <p className="text-base sm:text-lg lg:text-xl text-gray-700 lg:pl-6 max-w-prose">

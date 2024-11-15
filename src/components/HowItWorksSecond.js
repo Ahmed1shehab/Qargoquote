@@ -29,7 +29,7 @@ export const HowItWorksSecond = () => {
           <img
             src={mainImage}
             alt="Main"
-            className=" h-auto object-contain mx-auto md:mx-0"
+            className="lg:w-3/4 h-auto object-contain mx-auto md:mx-0"
           />
         </div>
         <div className="md:w-2/3 w-full md:pl-8" data-aos="fade-left">
